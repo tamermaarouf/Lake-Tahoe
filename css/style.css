@@ -1,0 +1,202 @@
+*{
+  /* border: 1px solid red; */
+  box-sizing: border-box;
+}
+
+.c-Text {
+  text-align: center;
+}
+body {
+  color: #878787;
+  margin: 0;
+  font-size: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+a:link {
+  color: rgb(255, 169, 73);
+  text-decoration: none;
+}
+
+a:visited {
+  color: lightskyblue;
+}
+
+a:hover {
+  color: rgba(255, 169, 73, .4);
+}
+
+a:active {
+  color: lightcoral;
+}
+.main-header {
+  text-align: center;
+  height: 850px;
+  background: linear-gradient(#FFA949, transparent 85%),
+            #FFA949 url(../img/mountains.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.arrow {
+  width: 50px;
+  margin-top: 150px;
+}
+
+.title {
+  color: white;
+  font-size: 1.625rem;
+  font-weight: 200;
+  letter-spacing: 0.065em;
+  border-bottom: 2px solid;
+  padding-top: 20px;
+
+}
+
+h1 {  
+  font-size: 5.625rem;
+  color: rgb(255, 255 , 255);
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 1.3;
+  text-shadow: 5px 5px 4px #222;
+  margin: 12px 0 0;
+}
+
+img {
+  width: 100%;
+}
+.primary-content {
+  text-align: center;
+}
+
+.callout {
+  font-size: 1.25em;
+  padding: 0 9px 3px;
+  border-bottom: 3px solid;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.primary-content, .secondary-content {
+  width: 75%;
+  max-width: 900px;
+  padding-right: 50px;
+  padding-left: 50px;
+  margin: auto;
+}
+
+.wildLife {
+  color: white;
+  padding: 15% 20%;
+  border-top: 10px solid #FFA949;
+  margin: 105px 0 60px;
+  background: #434a52 url(../img/bear.jpg) no-repeat center;
+  background-size: cover; 
+  box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.6);
+}
+
+.t-border {
+  border-top: 2px solid lightgray;
+}
+
+h2 {
+  font-size: 3.3125em;
+  text-decoration: underline;
+  font-weight: normal;
+  line-height: 1.1;
+  margin-bottom: 1.7em;
+}
+
+h3 {
+  font-size: 20px;
+  color: #48525c;
+  line-height: 1.3;
+  margin-bottom: 1.625em;
+}
+
+ ol, ul {
+  margin: 30px 0;
+} 
+
+li {
+  margin-bottom: 10px;
+}
+
+.resorts, .tips {
+  width: 46.5%;
+}
+
+.tips {
+  float: left;
+}
+
+.resorts {
+  float: right;
+}
+
+.clearFix {
+  clear: both;
+  display: table;
+  content: "";
+}
+
+#main-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-bottom: 10px solid #FFA949;
+  }
+
+  /* Media Queries
+  ---------------- */
+  @media (max-width: 1024px){
+    .primary-content,
+    .secondary-content {
+      width: 90%;
+    }
+
+    .wildLife {
+      padding: 10% 12%;
+      margin: 50px 0 20px;
+
+    }
+  }
+
+  @media (max-width: 768px){
+    .primary-content,
+    .secondary-content {
+      width: 100%;
+      padding: 10%;
+      border: none;
+    }
+
+    .main-header {
+      max-height: 380px;
+      padding: 50px 25px 0;
+    }
+
+    .title {
+      font-size: 1.3rem;
+      border: none;
+    
+    }
+
+    h1 {
+      font-size: 3rem;
+      line-height: 1.1;
+      margin: 8px 0 0;
+    }
+
+    .arrow {
+      display: none;
+    }
+    
+    .intro {
+      font-size: 1rem;
+    }
+    
+    .resorts, .tips {
+      width: 100%;
+      float: none;
+    }
+  }
